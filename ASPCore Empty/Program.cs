@@ -8,9 +8,11 @@ var app = builder.Build();
 
 //app.MapDefaultControllerRoute();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=About}/{id?}"
-    );
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=About}/{id?}"
+//    );
+
+app.MapControllers();
 
 app.Run();
