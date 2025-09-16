@@ -9,6 +9,26 @@
 <h1>Index Page</h1>
 <h1>This is Home Page</h1>
 
+@ViewData["Name"]
+@ViewData["Age"] 
+@ViewData["DateTime"]
+
+@{
+    foreach (var name in (string[])ViewData["array"])
+    {
+        <h1>@name</h1>
+    }
+
+}
+    
+@{
+        foreach (var name in (List<String>)ViewData["ListNames"])
+    {
+        <h1>@name</h1>
+    }
+}
+
+
 
 @* @{
     var name = "Prerak";
