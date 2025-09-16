@@ -12,7 +12,7 @@ namespace ASPCore_Empty.Controllers
         //[Route("[action]")]
         public IActionResult Index()
         {
-            return View(); 
+            return View(); // ViewResults, PartialViewResults , JsonResult all have implemented IActionResult
         }
 
         //[Route("[action]")]
