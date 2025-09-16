@@ -9,7 +9,35 @@
 <h1>Index Page</h1>
 <h1>This is Home Page</h1>
 
-@ViewData["Name"]
+<br/>
+@ViewBag.Age
+<br/>
+@ViewData["Data"]
+<br />
+@ViewBag.Name
+<br />
+@ViewBag.DateTime
+<br/>
+@ViewBag.MyName
+<br />
+
+@{
+    foreach (var item in ViewBag.array)
+    {
+        <h1>@item</h1>
+    }
+}
+
+
+@{
+    foreach (var item in ViewBag.list1)
+    {
+        <h1>@item</h1>
+    }
+}
+
+
+@* @ViewData["Name"]
 @ViewData["Age"] 
 @ViewData["DateTime"]
 
@@ -26,11 +54,11 @@
     {
         <h1>@name</h1>
     }
-}
+} 
 
 
 
-@* @{
+ @{
     var name = "Prerak";
     var age = 22;
 }

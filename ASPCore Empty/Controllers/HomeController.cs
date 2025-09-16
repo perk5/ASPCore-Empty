@@ -12,18 +12,33 @@ namespace ASPCore_Empty.Controllers
         //[Route("[action]")]
         public IActionResult Index()
         {
-            ViewData["Name"] = "Prerak";
-            ViewData["Age"] = 22;
-            ViewData["DateTime"] = DateTime.Now.ToLongDateString();
-            
+            //ViewData["Name"] = "Prerak";
+            //ViewData["Age"] = 22;
+            //ViewData["DateTime"] = DateTime.Now.ToLongDateString();
+
+
+            //string[] arr = { "Prerak", "Raj", "Ram" };
+            //ViewData["array"] = arr;
+
+            //List<string> list1 = new List<string> { "Perk", "Raja", "Jack" };
+
+            //ViewData["ListNames"] = list1;
+
+            ViewBag.Age = 5;
+            ViewBag.Name = "Prerak";
+            ViewBag.DateTime = DateTime.Now.ToShortDateString();
 
             string[] arr = { "Prerak", "Raj", "Ram" };
-            ViewData["array"] = arr;
 
-            List<string> list1 = new List<string> { "Perk", "Raja", "Jack" };
+            ViewBag.array = arr;
 
-            ViewData["ListNames"] = list1;
+            ViewData["MyName"] = "Perkk";
 
+            ViewBag.Data = "Hello World";
+
+            List<string> l1 = new List<string> { "Perk", "Man", "Jack" };
+
+            ViewBag.list1 = l1;
 
 
             return View(); // ViewResults, PartialViewResults , JsonResult all have implemented IActionResult
