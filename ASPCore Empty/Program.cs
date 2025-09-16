@@ -44,6 +44,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}"
     );
 
-app.MapControllers();
+//app.MapControllers();
 
 app.Run();

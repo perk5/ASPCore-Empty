@@ -21,10 +21,10 @@ namespace ASPCore_Empty.Controllers
             return View();
         }
 
-        [Route("{id?}")]
-        public int Details(int id)
+        //[Route("{id?}")]
+        public IActionResult Contact()
         {
-            return id ;
+            return View();
         }
     }
 }
