@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Student>
 @{
     ViewData["Title"] = "Contact";
 }
@@ -6,3 +6,19 @@
 <h1>Contact View</h1>
 <h1>This is Contact Page</h1>
 
+@{
+    foreach (var mod in Model)
+    {
+        <h1>@mod.studentId</h1>
+        <h1>@mod.name</h1>
+        <h1>@mod.description</h1>
+        <h1>@mod.age</h1>
+    }
+}
+ 
+@* @ViewData["Data1"]
+<br />
+@ViewBag.data2
+<br />
+@TempData["Data2"]
+<br /> *@
